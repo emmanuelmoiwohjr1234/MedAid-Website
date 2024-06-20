@@ -945,6 +945,38 @@ margin-top: 3em;
 }
 
 }
+/* --------------this portion of the css is the responsive layout (media query max-width of 425px)------------ */
+@media (max-width:425px){
+   /* ------------------------------Make Appointment form------------------------ */
+   .parent-child{
+      padding: 0.5em 2em;
+      
+   }
+   .parent-child h2{
+      margin-top: 8em;
+      font-size: 1.9rem;
+   }
+   /* ------------------------SECTION 7 portion (What Patients Say About Us) -------------------- */
+.Testimony-box{
+   padding: 53em 1em 5em;
+   background-color: #EDFEFB;
+   text-align:center ;
+}
+/* ------------------------ Subscribe To Our Newsletter------------------- */
+.subscribe input{
+   width: 100%;
+   padding: 1em 1em;
+   border-radius: 50px;
+}
+.subscribe-button{
+   position: absolute;
+   top: 15.3em;
+   right: 2.5em;
+   padding:0.5em 0.7em;
+   font-size: 1rem;
+}
+}
+  
 
 
 
