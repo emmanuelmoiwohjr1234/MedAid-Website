@@ -6,7 +6,7 @@
     <title>Med<span>A</span>id</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <main>
@@ -43,16 +43,27 @@
     <div class="line"></div>
     <!-- nav links and social media contact -->
     <div class="nav-links">
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div> 
         <!-- nav links  -->
-       <nav>
-          <a href=""> <span>HOME</span></a>
-          <a href="">ABOUT</a>
-          <a href="">OUR DOCTOR</a>
-          <a href="">SERVICES</a>
-          <a href="">APPOINTMENT</a>
-          <a href="">BLOG</a>
-          <a href="">CONTACT</a>
-       </nav>
+        <article class="dark-greadent">
+            <div class="links">
+                <div class="logo">
+                <img src="./icons/logo4 (1).png" width="100px">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                </div> 
+                <nav>
+                    <a href=""> <span>HOME</span></a>
+                    <a href="">ABOUT</a>
+                    <a href="">OUR DOCTOR</a>
+                    <a href="">SERVICES</a>
+                    <a href="">APPOINTMENT</a>
+                    <a href="">BLOG</a>
+                    <a href="">CONTACT</a>
+                </nav>
+            </div>
+        </article>
        <!-- social media contact -->
         <div>
           <i class="fa-brands fa-facebook"></i>
@@ -83,6 +94,7 @@
 </section>
 <!-- -------------SECTION 2 portion (Doctors Timetable,Emergency Call & Make An Appointment) -->
 <section>
+    <div data-aos="fade-down-right">
     <article class=" rows">
         <div class="col col-1">
             <img src="./icons/chekk.png" width="50px">
@@ -105,7 +117,9 @@
                <svg class="svg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
         </div>
     </article>
+</div>
     <!--------------SECTION 3 portion (About MedicaLife)---------- -->
+    <div data-aos="zoom-in">
     <article class=" About-MedicaLife">
         <div  class="image-background">
                <img src="./pictures/profile-qorga7ddh2tsvg2kkem7p39rzdx43914fgzhg4nksg.jpg" width="500px">
@@ -164,6 +178,7 @@
         </div>
        
     </article>
+</div>
 </section>
 <!---------------- -SECTION 4 portion (Our Healthcare Service)--------------->
 
@@ -495,10 +510,12 @@
         </article>
     </section>
 </main> 
-<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+<script src="./medaid.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    // AOS.init();
+    AOS.init();
   </script>
+  
 </body>
 </html>
 
