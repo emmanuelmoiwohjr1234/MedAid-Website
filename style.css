@@ -241,7 +241,7 @@ background-color: #040447;
 }
 /* -----video-play button--- */
 .play-button{
-   animation: breath 2s 3s linear infinite;
+   /* animation: breath 2s 3s linear infinite; */
 }
 .fa-circle-play{
    position: absolute;
